@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Selector</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    
+        img {
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            margin: 20px;
+            cursor: pointer;
+            box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #fff;
+        }
+
+        .parent:hover > img:not(:hover){
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <img src="oggy.png" alt="">
+        <img src="jake.png" alt="">
+        <img src="cockroach.jpg" alt="">
+        <img src="olivia.jpg" alt="">
+    </div>
+</body>
+</html>
